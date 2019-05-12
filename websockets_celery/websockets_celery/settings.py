@@ -142,5 +142,5 @@ WSGI_APPLICATION = 'ws4redis.django_runserver.application'
 # Redis connection info. Replace localhsot with given broker
 
 CELERY_RESULT_BACKEND = "redis"
-CELERY_BROKER_URL = 'amqp://@localhost:5672'
+CELERY_BROKER_URL = 'amqp://code4scout:cod34sc0ut@ec2-34-246-222-253.eu-west-1.compute.amazonaws.com:5672'
 REDIS_HOST = "localhost"
