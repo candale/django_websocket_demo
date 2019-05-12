@@ -26,6 +26,7 @@ def average_color(request):
     Query params:
         - url: a list of URLs as a comma separated value
         - user: the user that is making the request
+    Return as response a dict of the form {'pic_url': 'color_code', ...}
 
     # TODO: make this run through celery and post success messages through websocket
     """
