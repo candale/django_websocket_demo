@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_celery_results',
     # we need the websocket package
     'ws4redis',
     'work',
@@ -141,6 +142,6 @@ WSGI_APPLICATION = 'ws4redis.django_runserver.application'
 
 # Redis connection info. Replace localhsot with given broker
 
-CELERY_RESULT_BACKEND = "redis"
+CELERY_RESULT_BACKEND = 'django-db'
 CELERY_BROKER_URL = 'amqp://code4scout:cod34sc0ut@ec2-34-246-222-253.eu-west-1.compute.amazonaws.com:5672'
 REDIS_HOST = "localhost"
